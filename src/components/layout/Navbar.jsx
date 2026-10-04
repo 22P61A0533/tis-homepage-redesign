@@ -7,8 +7,8 @@ const navItems = [
   { label: 'About', href: '#about', id: 'about' },
   { label: 'Stats', href: '#stats', id: 'stats' },
   { label: 'Academics', href: '#academics', id: 'academics' },
-  { label: 'Campus Life', href: '#campus', id: 'campus' },
   { label: 'Sports', href: '#sports', id: 'sports' },
+  { label: 'Campus Life', href: '#campus', id: 'campus' },
   { label: 'Admissions', href: '#admissions', id: 'admissions' },
 ]
 
