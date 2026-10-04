@@ -1,48 +1,75 @@
-# Tulas International School — Homepage Redesign
+# TIS Homepage Redesign
 
-A modern, responsive homepage redesign for **Tulas International School (TIS)**, created as a Frontend Developer recruitment assignment.
+A modern, animated, responsive homepage redesign for **Tulas International School (TIS)**, built as a Frontend Developer recruitment assignment.
 
-The project focuses on creating a polished, high-converting school website experience with smooth animations, responsive layouts, interactive UI elements, and a light/dark theme.
+The goal was to preserve the core identity and messaging of TIS while creating a more polished, interactive, and high-converting web experience.
 
 ## Live Demo
 
-Live deployment: **Add your Vercel URL here**
+**Live Website:**
+https://tis-homepage-redesign-chi.vercel.app/
 
-## GitHub Repository
+**GitHub Repository:**
+https://github.com/22P61A0533/tis-homepage-redesign
 
-Repository: **Add your GitHub repository URL here**
+---
+
+## Overview
+
+This project redesigns the Tulas International School homepage with a modern visual system, smooth animations, responsive layouts, and interactive UI elements.
+
+The experience is designed to communicate:
+
+* Academic excellence
+* Sports and extracurricular activities
+* Campus life
+* Student development
+* Admissions
+
+The implementation focuses on clean component architecture, reusable animation patterns, responsive design, accessibility, and maintainable React code.
 
 ---
 
 ## Features
 
-* Responsive design for mobile, tablet, and desktop
-* Light and dark theme switcher
-* Custom animated cursor
-* Scroll progress indicator from 0% to 100%
+### Core Features
+
+* Responsive homepage for desktop, tablet, and mobile
+* Modern hero section with animated entrance effects
+* Light and dark theme support
+* Theme-specific imagery
+* Smooth scrolling navigation
 * Active navigation section detection
-* Animated mobile navigation menu
-* Scroll-triggered section reveal animations
+* Mobile navigation menu
+* Scroll-triggered reveal animations
 * Animated statistics counters
-* Interactive cards and hover effects
-* Animated hero section
-* Smooth image zoom and hover interactions
-* Different imagery for light and dark themes
-* Admissions-focused call-to-action section
-* Back-to-top interaction
+* Interactive hover effects
+* Image zoom interactions
+* Admissions call-to-action section
+* Responsive cards and layouts
 * Semantic HTML structure
-* Accessible navigation labels and image alt text
+* Descriptive image alt text
+
+### Standout Interactive Features
+
+* Custom cursor for desktop
+* Scroll progress indicator
+* Light/dark theme switcher
+* Scroll-triggered animations
+* Animated statistics
+* Interactive navigation states
+* Motion-based hover and tap interactions
 
 ---
 
 ## Tech Stack
 
-* React.js
-* Vite
-* Tailwind CSS
-* Framer Motion
-* Lucide React
-* JavaScript (ES6+)
+* **React.js**
+* **Vite**
+* **Tailwind CSS**
+* **Framer Motion**
+* **Lucide React**
+* **JavaScript (ES6+)**
 
 ---
 
@@ -50,19 +77,56 @@ Repository: **Add your GitHub repository URL here**
 
 ```text
 tis-homepage-redesign/
+│
 ├── public/
+│
 ├── src/
 │   ├── assets/
+│   │   ├── hero-light.jpg
+│   │   ├── hero-dark.jpg
+│   │   ├── about-light.jpg
+│   │   ├── about-dark.jpg
+│   │   ├── academics-light.jpg
+│   │   ├── academics-dark.jpg
+│   │   ├── sports-light.jpg
+│   │   ├── sports-dark.jpg
+│   │   ├── campus-light.jpg
+│   │   ├── campus-dark.jpg
+│   │   ├── admissions-light.jpg
+│   │   ├── admissions-dark.jpg
+│   │   └── tis-campus.png
+│   │
 │   ├── components/
 │   │   ├── animation/
+│   │   │   └── Reveal.jsx
+│   │   │
 │   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Footer.jsx
+│   │   │
 │   │   ├── sections/
+│   │   │   ├── Hero.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Stats.jsx
+│   │   │   ├── Academics.jsx
+│   │   │   ├── Sports.jsx
+│   │   │   ├── CampusLife.jsx
+│   │   │   └── Admissions.jsx
+│   │   │
 │   │   └── ui/
+│   │       ├── CustomCursor.jsx
+│   │       └── ScrollProgress.jsx
+│   │
 │   ├── hooks/
+│   │   └── useTheme.js
+│   │
 │   ├── data/
+│   │
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
+│
+├── .gitignore
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -73,55 +137,72 @@ tis-homepage-redesign/
 
 ## Main Sections
 
-### Hero
+### 1. Hero
 
-Introduces Tulas International School with an animated campus image, entrance animations, primary call-to-action, and scroll indicator.
+The hero section introduces Tulas International School with:
 
-### About TIS
+* Large headline
+* Supporting description
+* Admissions CTA
+* Discover TIS CTA
+* Animated background imagery
+* Theme-specific hero images
+* Animated scroll indicator
 
-Highlights the school's approach to holistic education with a responsive image and animated content reveal.
+### 2. About TIS
 
-### TIS at a Glance
+Introduces the school and its approach to holistic education using an image-and-content layout.
 
-Displays key campus statistics with animated number counters:
+### 3. TIS at a Glance
+
+Highlights key campus information with animated counters:
 
 * 22+ acres of campus
 * 16+ Olympic sports
 * 24×7 medical assistance
 * 6:1 student-teacher ratio
 
-### Academics
+### 4. Academics
 
-Presents the academic experience through animated content cards and responsive layouts.
+Highlights academic excellence and future-ready learning through a responsive card layout.
 
-### Sports & Activities
+### 5. Sports & Activities
 
-Highlights the importance of sports and extracurricular activities with interactive sport cards.
+Showcases the importance of sports and extracurricular development with interactive sport cards.
 
-### Campus Life
+### 6. Campus Life
 
-Showcases campus life using an image section and animated feature cards.
+Presents the residential and campus experience with an image-driven layout and animated feature cards.
 
-### Admissions
+### 7. Admissions
 
-Provides a strong conversion-focused call-to-action encouraging visitors to explore the admissions process.
+Provides a strong conversion-focused section with:
+
+* Admissions messaging
+* Application journey
+* CTA
+* Official TIS website link
 
 ---
 
 ## Animation & Interaction
 
-The project uses **Framer Motion** for:
+Animations are implemented using **Framer Motion**.
 
-* Entrance animations
-* Scroll-triggered reveals
-* Animated counters
-* Hover interactions
-* Button interactions
+Examples include:
+
+* Hero entrance animations
+* Scroll-triggered section reveals
+* Animated statistics
 * Image zoom effects
+* Card hover interactions
+* Button hover and tap animations
 * Mobile menu transitions
-* Theme icon transitions
+* Theme toggle animation
+* Custom cursor interaction
+* Scroll progress animation
 
-The project also includes a custom cursor and scroll progress indicator.
+Reusable animation behavior is implemented through the `Reveal` component.
 
 ---
 
@@ -132,9 +213,11 @@ The website supports both:
 * Light mode
 * Dark mode
 
-The selected theme is stored in `localStorage`, so the user's preference is preserved when the page is revisited.
+The theme state is handled using the custom `useTheme` hook.
 
-Different images are displayed in light and dark mode for major visual sections.
+The selected theme is stored in `localStorage`, allowing the user's preference to persist between page visits.
+
+Different images are displayed for light and dark themes across the main sections to maintain visual contrast and consistency.
 
 ---
 
@@ -142,41 +225,52 @@ Different images are displayed in light and dark mode for major visual sections.
 
 The interface was designed and tested for:
 
-* Mobile — 375px
-* Tablet — 768px
-* Desktop — 1280px
+* **Mobile:** 375px
+* **Tablet:** 768px
+* **Desktop:** 1280px
 
-The layout adapts navigation, typography, spacing, grids, images, and interactive elements across screen sizes.
+Responsive layouts use Tailwind CSS breakpoints and adapt navigation, typography, grids, spacing, and content presentation across screen sizes.
 
 ---
 
 ## Getting Started
 
-### 1. Clone the repository
+### Prerequisites
+
+Make sure you have:
+
+* Node.js
+* npm
+
+installed on your system.
+
+### Installation
+
+Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/22P61A0533/tis-homepage-redesign.git
 ```
 
-### 2. Enter the project directory
+Navigate into the project:
 
 ```bash
 cd tis-homepage-redesign
 ```
 
-### 3. Install dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 4. Start the development server
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at the local Vite development URL shown in the terminal.
+The application will be available at the local development URL shown in the terminal.
 
 ---
 
@@ -188,11 +282,7 @@ The application will be available at the local Vite development URL shown in the
 npm run dev
 ```
 
-### Lint
-
-```bash
-npm run lint
-```
+Starts the Vite development server.
 
 ### Production Build
 
@@ -200,51 +290,90 @@ npm run lint
 npm run build
 ```
 
-### Preview Production Build
+Creates an optimized production build.
 
-```bash
-npm run preview
-```
-
----
-
-## Validation
-
-The project currently passes:
+### Lint
 
 ```bash
 npm run lint
 ```
 
-with no ESLint errors or warnings.
+Runs ESLint to check the project for code-quality issues.
 
-The production build also completes successfully:
+### Preview
 
 ```bash
+npm run preview
+```
+
+Previews the production build locally.
+
+---
+
+## Validation
+
+Before deployment, the project was checked for:
+
+* Responsive layout behavior
+* Mobile navigation
+* Light/dark theme switching
+* Animation behavior
+* Production build success
+* ESLint issues
+* Image rendering
+* Navigation interactions
+
+Production build:
+
+```text
 npm run build
+✓ built successfully
+```
+
+Lint:
+
+```text
+npm run lint
+✓ passed successfully
 ```
 
 ---
 
 ## Design Goals
 
-The redesign was created with the following goals:
+The redesign focuses on:
 
-* Create a premium first impression
-* Improve visual hierarchy
-* Make navigation easier
-* Increase engagement through subtle motion
-* Highlight important school information
-* Create stronger calls to action
-* Maintain usability across screen sizes
-* Keep animations smooth and purposeful
+* Clean visual hierarchy
+* Strong typography
+* Modern spacing and layouts
+* Smooth interactions
+* Clear calls to action
+* Responsive behavior
+* Accessibility-conscious markup
+* Reusable React components
+* Maintainable code structure
+* Performance-conscious animations
 
 ---
 
 ## Credits
 
-School information and visual inspiration are based on the official Tulas International School website.
+Content and brand references were based on the official Tulas International School website:
 
-Official website: https://tis.edu.in/
+https://tis.edu.in/
 
-This project was created as a recruitment assignment and is not an official Tulas International School website.
+This project is a **frontend redesign/recruitment assignment** and is not the official Tulas International School website.
+
+---
+
+## Author
+
+**Brahmani Billa**
+
+Frontend Developer Candidate
+
+GitHub:
+https://github.com/22P61A0533
+
+Project Repository:
+https://github.com/22P61A0533/tis-homepage-redesign
